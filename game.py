@@ -5,7 +5,7 @@ def game_initiate():
 \nSpock vaporizes Rock \nRock crushes Scissors")
 
 def number_of_players():
-    print()
+    print("How many players? 1, 2 or 3 for a surprise")
 
 
    
