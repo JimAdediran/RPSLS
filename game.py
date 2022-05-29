@@ -1,4 +1,7 @@
 from time import sleep
+from ai import AI
+from human import Human
+from player import Player
 
 def game_initiate():
     print("Welcome to Rock Paper Scissors Lizard Spock \n")
@@ -10,9 +13,28 @@ def game_initiate():
 \nSpock vaporizes Rock \nRock crushes Scissors \n")
 
 def number_of_players():
-    sleep(2)
-    print("How many players? 1, 2 or 3 for a surprise")
-    player_number = input()
+    player_number = input("How many players? 1, 2 or 3 for a surprise ")
+    if player_number == "1":
+        human_vs_ai()       
+    elif player_number == "2":
+        human_vs_human()
+    elif player_number == "3":
+        ai_vs_ai()
+    else:
+        print("Invalid selection, please choose again")
+        number_of_players()
+
+
 
     
+def human_vs_ai():
+    player_one = Human 
+    player_two = AI
 
+def human_vs_human():
+    player_one = Human
+    player_two = Human
+
+def ai_vs_ai():
+    player_one = AI
+    player_two = AI
