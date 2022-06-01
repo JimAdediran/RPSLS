@@ -28,8 +28,11 @@ def number_of_players():
 
     
 def human_vs_ai():
-    player_one = Human 
+    player_one = Human
+    player_one_input = int(input("Choose 0 for Rock\n Choose 1 for Paper\n Choose 2 for Scissors\n Choose 3 for Lizard\n Choose 4 for Spock"))
+
     player_two = AI
+    player_two.gesture_choice
 
 def human_vs_human():
     player_one = Human

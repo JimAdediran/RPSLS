@@ -3,7 +3,7 @@ from player import Player
 class Human(Player):
     def __init__(self):
         super().__init__()
-        self.victory = 0
+        self.score = 0
 
     def gesture_choice(self):
         self.gesture_choice = int(input())
