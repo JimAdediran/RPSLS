@@ -1,4 +1,3 @@
-import main
 from time import sleep
 from ai import AI
 from human import Human
@@ -140,7 +139,7 @@ def human_vs_ai():
         status = input("\nWould you like to play again? (y/n): ")
         if status == "y":
             replay = False
-            game_one()
+            game_initiate()
         elif status == "n":
             replay = False
         else:
@@ -263,7 +262,7 @@ def human_vs_human():
         status = input("\nWould you like to play again? (y/n): ")
         if status == "y":
             replay = False
-            game_one()
+            game_initiate()
         elif status == "n":
             replay = False
         else:
@@ -382,7 +381,7 @@ def ai_vs_ai():
         status = input("\nWould you like to play again? (y/n): ")
         if status == "y":
             replay = False
-            game_one()
+            game_initiate()
         elif status == "n":
             replay = False
         else:
