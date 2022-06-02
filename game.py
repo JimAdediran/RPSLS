@@ -33,7 +33,7 @@ def human_vs_ai():
     player_two_decision = player_two.gesture_choice
 
     while player_one.score < 3 and player_two.score < 3:
-        print("Choose 0 for Rock\n Choose 1 for Paper\n Choose 2 for Scissors\n Choose 3 for Lizard\n Choose 4 for Spock")
+        print("Choose 0 for Rock\nChoose 1 for Paper\nChoose 2 for Scissors\nChoose 3 for Lizard\nChoose 4 for Spock")
         player_one_decision()
         player_two_decision()
         if player_one.gesture_choice == "Rock" and player_two.gesture_choice == "Scissors":
@@ -140,6 +140,7 @@ def human_vs_ai():
         if status == "y":
             replay = False
             game_initiate()
+            number_of_players()
         elif status == "n":
             replay = False
         else:
@@ -156,7 +157,7 @@ def human_vs_human():
     player_two_decision = player_two.gesture_choice
 
     while player_one.score < 3 and player_two.score < 3:
-        print("Choose 0 for Rock\n Choose 1 for Paper\n Choose 2 for Scissors\n Choose 3 for Lizard\n Choose 4 for Spock")
+        print("Choose 0 for Rock\nChoose 1 for Paper\nChoose 2 for Scissors\nChoose 3 for Lizard\nChoose 4 for Spock")
         player_one_decision()
         player_two_decision()
         if player_one.gesture_choice == "Rock" and player_two.gesture_choice == "Scissors":
@@ -263,6 +264,7 @@ def human_vs_human():
         if status == "y":
             replay = False
             game_initiate()
+            number_of_players()
         elif status == "n":
             replay = False
         else:
@@ -275,7 +277,7 @@ def ai_vs_ai():
     player_two_decision = player_two.gesture_choice
 
     while player_one.score < 3 and player_two.score < 3:
-        print("Choose 0 for Rock\n Choose 1 for Paper\n Choose 2 for Scissors\n Choose 3 for Lizard\n Choose 4 for Spock")
+        print("Choose 0 for Rock\nChoose 1 for Paper\nChoose 2 for Scissors\nChoose 3 for Lizard\nChoose 4 for Spock")
         player_one_decision()
         player_two_decision()
         if player_one.gesture_choice == "Rock" and player_two.gesture_choice == "Scissors":
@@ -382,6 +384,7 @@ def ai_vs_ai():
         if status == "y":
             replay = False
             game_initiate()
+            number_of_players()
         elif status == "n":
             replay = False
         else:
