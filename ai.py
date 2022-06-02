@@ -12,4 +12,4 @@ class AI(Player):
 
     def gesture_choice(self):
         self.gesture_choice = self.gestures[random.randint(0,4)]
-        print(f'{self.name} has chosen {self.gesture_choice}')
+        print(f'{self.name} has chosen {self.gesture_choice}\n')
